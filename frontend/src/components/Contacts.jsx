@@ -1,0 +1,7 @@
+const contacts=()=>{
+    return(
+      <>
+      
+      </>
+    )  
+}
