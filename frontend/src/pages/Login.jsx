@@ -25,6 +25,7 @@ const Login = () => {
         username,
         password,
       });
+      console.log(data)
       if (data.status == false) {
         toast.error(data.msg, toastOption);
       }
