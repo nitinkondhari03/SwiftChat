@@ -1,4 +1,4 @@
-.Container{
+.Container_contacts{
       display: grid;
       grid-template-rows: 10% 75% 15%;
       overflow: hidden;

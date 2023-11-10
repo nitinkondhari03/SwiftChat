@@ -5,10 +5,11 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Contactsx from "../components/Contacts";
 import Welcome from "../components/Welcome";
+import ChatContainer from "../components/ChatContainer";
 const Chat = () => {
   const navigate = useNavigate();
   const [contacts, setContacts] = useState([]);
-  const [currentChat, setCurrentChat] = useState("");
+  const [currentChat, setCurrentChat] = useState(undefined);
   const [currentUser, setCurrentUser] = useState("");
   useEffect(() => {
     if (!localStorage.getItem("chat-app-user")) {
@@ -42,7 +43,11 @@ const Chat = () => {
     <div className="chat_div">
       <div className="container">
         <Contactsx  contacts={contacts} currentUser={currentUser} changeChat={handleChatChange}  />
-        <Welcome currentUser={currentUser}/>
+        {currentChat === undefined ? (
+            <Welcome currentUser={currentUser}/>
+          ) : (
+            <ChatContainer currentChat={currentChat}  />
+          )}
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import Robot from "../assets/robot.gif";
 import "../CSS/components/Welcome.css"
 const Welcome = ({ currentUser }) => {
   return (
-    <div className="Container">
+    <div className="Container_welcome">
       <img src={Robot} alt="Robot" />
       <h1>
         Welcome, <span>{currentUser.userName}!</span>

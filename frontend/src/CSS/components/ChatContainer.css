@@ -1,0 +1,20 @@
+.chat_Container{
+padding-top: 1rem;
+}
+.chat-header{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0.2rem;
+}
+.user-details{
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+.user-details>.avatar>img{
+height: 3rem;
+}
+.user-details>.username>h3{
+      color: white;
+}

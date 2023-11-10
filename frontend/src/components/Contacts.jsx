@@ -17,7 +17,7 @@ const Contactsx=({contacts,currentUser,changeChat})=>{
       <div>
         <>
       {currentUserImage && currentUserImage && (
-        <div className="Container">
+        <div className=".Container_contacts">
           <div className="brand">
             <img src={Logo} alt="logo" />
             <h3>chat app</h3>
