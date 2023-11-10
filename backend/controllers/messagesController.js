@@ -14,7 +14,7 @@ module.exports.addMessage=async(req,res,next)=>{
             next(error)
       }
 }
-module.exports.getAllMessage=async()=>{
+module.exports.getAllMessage=async(req,res,next)=>{
       try {
             const {from,to}=req.body;
             const messages=await messageModel.find({
@@ -30,6 +30,6 @@ module.exports.getAllMessage=async()=>{
             })
             res.json(projectMessages)
       } catch (error) {
-            
+           next(error)
       }
 }
