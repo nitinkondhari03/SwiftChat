@@ -1,0 +1,13 @@
+.Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.Container>img {
+    height: 20rem;
+  }
+  .Container>span {
+    color: #4e0eff;
+  }
