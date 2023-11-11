@@ -1,50 +1,41 @@
-.loader_div{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 3rem;
-      background-color: #131324;
-      height: 100vh;
-      width: 100vw;
+.container_setavatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #131324;
+  height: 100vh;
+  width: 100vw;
 }
-.loader {
-      max-inline-size: 100%;
-    }
-.avatar_div{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 3rem;
-      background-color: #131324;
-      height: 100vh;
-      width: 100vw;
+.container_setavatar_loader_loader {
+  max-inline-size: 100%;
 }
-.title-container>h1{
-color: white;
+.container_setavatar_title-container > h1 {
+  color: white;
 }
-.avatars{
-      display: flex;
-      gap: 2rem;
+.container_setavatar_avatars {
+  display: flex;
+  gap: 2rem;
 }
-.avatar{
-      border: 0.4rem solid transparent;
-      padding: 0.4rem;
-      border-radius: 5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 0.5s ease-in-out
+.container_setavatar_avatar {
+  border: 0.4rem solid transparent;
+  padding: 0.4rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
 }
-.avatar>img{
-height: 6rem;
+.container_setavatar_avatar > img {
+  height: 6rem;
+  transition: 0.5s ease-in-out;
 }
-.selected{
-      border: 0.4rem solid #4e0eff;
+.container_setavatar_avatar_selected {
+  border: 0.4rem solid #4e0eff;
 }
-.submit-btn{
-background-color: #997af0;
+.container_setavatar_submit-btn {
+  background-color: #4e0eff;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -53,8 +44,7 @@ background-color: #997af0;
   border-radius: 0.4rem;
   font-size: 1rem;
   text-transform: uppercase;
-  transition: 0.5s ease-in-out;
 }
-.submit-btn:hover{
-      background-color: #4e0eff;
+.container_setavatar_submit-btn:hover {
+  background-color: #4e0eff;
 }

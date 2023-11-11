@@ -59,26 +59,32 @@ const ChatContainer = ({ currentChat, currentUser, socket }) => {
 
   return (
     <div className="chat_Container">
-      <div className="chat-header">
-        <div className="user-details">
-          <div className="avatar">
+      <div className="chat_Container_chat-header">
+        <div className="chat_Container_user-details">
+          <div className="chat_Container_avatar">
             <img
               src={`data:image/svg+xml;base64,${currentChat.avatarImage}`}
               alt="avatar"
             />
           </div>
-          <div className="username">
+          <div className="chat_Container_username">
             <h3>{currentChat.username}</h3>
           </div>
         </div>
         <Logout />
       </div>
-      <div className="chat-message">
+      <div className="chat_Container_chat-message">
         {messages.map((message) => {
           return (
             <div ref={scrollRef} key={uuidv4()}>
-              <div className={`${message.fromSelf ? "sended" : "recieved"}`}>
-                <div className="content">
+              <div
+                className={`chat_Container_chat-message_message ${
+                  message.fromSelf
+                    ? "chat_Container_chat-message_sended"
+                    : "chat_Container_chat-message_recieved"
+                }`}
+              >
+                <div className="chat_Container_chat-message_content">
                   <p>{message.message}</p>
                 </div>
               </div>

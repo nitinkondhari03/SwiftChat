@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../CSS/pages/Register.css";
 import logo from "../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
@@ -14,11 +14,11 @@ const Register = () => {
     password: "",
     confirmPassword: "",
   });
-  useEffect(()=>{
-    if(localStorage.getItem("chat-app-user")){
-      navigate("/")
+  useEffect(() => {
+    if (localStorage.getItem("chat-app-user")) {
+      navigate("/");
     }
-  },[])
+  }, []);
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (handleValidation()) {
@@ -73,7 +73,10 @@ const Register = () => {
   return (
     <>
       <div className="register">
-        <form onSubmit={(event) => handleSubmit(event)}>
+        <form
+          className="register_login_form"
+          onSubmit={(event) => handleSubmit(event)}
+        >
           <div className="brand">
             <img src={logo} alt="logo" />
             <h1>chat app</h1>

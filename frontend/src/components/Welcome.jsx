@@ -1,5 +1,5 @@
 import Robot from "../assets/robot.gif";
-import "../CSS/components/Welcome.css"
+import "../CSS/components/Welcome.css";
 const Welcome = ({ currentUser }) => {
   return (
     <div className="Container_welcome">

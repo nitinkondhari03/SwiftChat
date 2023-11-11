@@ -1,8 +1,4 @@
-const Messages=()=>{
-      return(
-            <>
-            Messages
-            </>
-      )
-}
-export default Messages
+const Messages = () => {
+  return <>Messages</>;
+};
+export default Messages;

@@ -1,13 +1,13 @@
-.Container_welcome{
+.Container_welcome {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   flex-direction: column;
 }
-.Container_welcome>img {
-    height: 20rem;
-  }
-  .Container_welcome>span {
-    color: #4e0eff;
-  }
+.Container_welcome > img {
+  height: 20rem;
+}
+.Container_welcome > span {
+  color: #4e0eff;
+}

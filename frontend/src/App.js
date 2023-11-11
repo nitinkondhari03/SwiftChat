@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/register" element={<Register />} />
-        <Route path="/setavatar" element={<SetAvatar/>} />
+        <Route path="/setavatar" element={<SetAvatar />} />
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Chat />} />
       </Routes>

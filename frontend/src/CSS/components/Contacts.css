@@ -1,79 +1,78 @@
-.Container_contacts{
-      display: grid;
-      grid-template-rows: 10% 75% 15%;
-      overflow: hidden;
-      background-color: #080420;    
+.Container_contacts {
+  display: grid;
+  grid-template-rows: 10% 75% 15%;
+  overflow: hidden;
+  background-color: #080420;
 }
-.brand {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      justify-content: center;
+.Container_contacts_brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
 }
-.brand>img {
-      height: 2rem;
-    }
-    .brand>h3 {
-      color: white;
-      text-transform: uppercase;
-    }
-    .contacts {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      overflow: auto;
-      gap: 0.8rem;
-    }
-    .contacts::-webkit-scrollbar {
-      width: 0.2rem;
-    }
-    .contacts::-webkit-scrollbar-thumb {
-      background-color: #ffffff39;
-      width: 0.1rem;
-      border-radius: 1rem;
-    }
-    .contact {
-      background-color: #ffffff34;
-      min-height: 5rem;
-      cursor: pointer;
-      width: 90%;
-      border-radius: 0.2rem;
-      padding: 0.4rem;
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      transition: 0.5s ease-in-out;
-    }
-    .avatars>img{
-        height: 3rem;
-      }
-      .usernames>h3{
-            color: white;
-      }
-      .selected {
-            background-color: #9a86f3;
-          }
-          .current-user {
-            background-color: #0d0d30;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-          }
-            .avatar>img {
-                height: 4rem;
-                max-inline-size: 100%;
-              }
-            
-            .username>h2 {
-                color: white;
-              }
-              @media screen and (min-width: 720px) and (max-width: 1080px) {
-                  
-                  .username>h2 {
-                      font-size: 1rem;
-                    }
-                  }
-                
+.Container_contacts_brand > img {
+  height: 2rem;
+}
+.Container_contacts_brand > h3 {
+  color: white;
+  text-transform: uppercase;
+}
+.Container_contacts_contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  gap: 0.8rem;
+}
+.Container_contacts_contacts::-webkit-scrollbar {
+  width: 0.2rem;
+}
+.Container_contacts_contacts-thumb {
+  background-color: #ffffff39;
+  width: 0.1rem;
+  border-radius: 1rem;
+}
+.Container_contacts_contactx {
+  background-color: #ffffff34;
+  min-height: 5rem;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.Container_contacts_contactx > .Container_contacts_contactx_avatar > img {
+  height: 3rem;
+}
+.Container_contacts_contactx > .Container_contacts_contactx_username > h3 {
+  color: white;
+}
+.Container_contacts_contactx_selected {
+  background-color: #9a86f3;
+}
+.Container_contacts_current-user {
+  background-color: #0d0d30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.Container_contacts_current-user_avatar > img {
+  height: 4rem;
+  max-inline-size: 100%;
+}
+.Container_contacts_current-user_username > h2 {
+  color: white;
+}
 
-
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+  .Container_contacts_current-user {
+    gap: 0.5rem;
+  }
+  .Container_contacts_current-user_username > h2 {
+    font-size: 1rem;
+  }
+}

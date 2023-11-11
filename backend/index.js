@@ -3,8 +3,8 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const { connection } = require("./conection");
 const userRoutes = require("./routes/userRoutes");
-const messageRoutes=require("./routes/messagesRoutes")
-const socket=require("socket.io")
+const messageRoutes = require("./routes/messagesRoutes");
+const socket = require("socket.io");
 const app = express();
 require("dotenv").config();
 
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/api/auth", userRoutes);
 app.use("/api/messages", messageRoutes);
 
-const server=app.listen(process.env.PORT, async () => {
+const server = app.listen(process.env.PORT, async () => {
   try {
     await connection;
     console.log("Connect to  DB");

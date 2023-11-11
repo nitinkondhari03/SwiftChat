@@ -12,20 +12,20 @@ const Login = () => {
     username: "",
     password: "",
   });
-  useEffect(()=>{
-    if(localStorage.getItem("chat-app-user")){
-      navigate("/")
+  useEffect(() => {
+    if (localStorage.getItem("chat-app-user")) {
+      navigate("/");
     }
-  },[])
+  }, []);
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (handleValidation()) {
-      const { password, username} = values;
+      const { password, username } = values;
       const { data } = await axios.post(loginRoute, {
         username,
         password,
       });
-      console.log(data)
+      console.log(data);
       if (data.status == false) {
         toast.error(data.msg, toastOption);
       }
@@ -43,7 +43,7 @@ const Login = () => {
     theme: "dark",
   };
   const handleValidation = () => {
-    const { password,username} = values;
+    const { password, username } = values;
     if (password === "") {
       toast.error("Email and Password is required", toastOption);
       return false;
@@ -62,7 +62,10 @@ const Login = () => {
   return (
     <>
       <div className="register">
-        <form onSubmit={(event) => handleSubmit(event)}>
+        <form
+          className="register_login_form"
+          onSubmit={(event) => handleSubmit(event)}
+        >
           <div className="brand">
             <img src={logo} alt="logo" />
             <h1>chat app</h1>

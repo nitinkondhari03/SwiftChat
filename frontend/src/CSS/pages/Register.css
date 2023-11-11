@@ -22,7 +22,7 @@
   text-transform: uppercase;
 }
 
-form {
+.register_login_form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -30,7 +30,7 @@ form {
   border-radius: 2rem;
   padding: 3rem 5rem;
 }
-form > input {
+.register_login_form > input {
   background-color: transparent;
   padding: 1rem;
   border: 0.1rem solid #4e0eff;
@@ -39,11 +39,11 @@ form > input {
   width: 100%;
   font-size: 1rem;
 }
-form > input:focus {
+.register_login_form > input:focus {
   border: 0.1rem solid #997af0;
   outline: none;
 }
-form > button {
+.register_login_form > button {
   background-color: #997af0;
   color: white;
   padding: 1rem 2rem;
@@ -55,14 +55,14 @@ form > button {
   text-transform: uppercase;
   transition: 0.5s ease-in-out;
 }
-form > button:hover {
+.register_login_form > button:hover {
   background-color: #4e0eff;
 }
-form > span {
+.register_login_form > span {
   color: white;
   text-transform: uppercase;
 }
-form > span > a {
+.register_login_form > span > a {
   color: #4e0eff;
   text-decoration: none;
   font-weight: bold;
